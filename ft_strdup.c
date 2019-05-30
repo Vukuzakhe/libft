@@ -1,27 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_dup.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vmabuza <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/21 11:15:53 by vmabuza           #+#    #+#             */
-/*   Updated: 2019/05/28 12:43:24 by vmabuza          ###   ########.fr       */
+/*   Created: 2019/05/22 14:55:09 by vmabuza           #+#    #+#             */
+/*   Updated: 2019/05/22 16:25:26 by vmabuza          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdlib.h>
 #include "libft.h"
 
-void	ft_memset(void *b, int c, size_t len)
+char *ft_strdup(char *str)
 {
-	unsigned char *p;
+	size_t size;
+	char *copy;
 
-	*p = b;
-	while (len != 0)
-	{
-		*p = c;
-		p++;
-		len--;
-	}
-	return (b);
+	copy = malloc(size);
+	size = ft_strlen(str) + 1;
+	if (copy == NULL)
+		return (NULL);
+	else
+		ft_memcpy(copy, str, size);
+	return (copy);
 }

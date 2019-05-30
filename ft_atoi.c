@@ -1,27 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vmabuza <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/21 11:15:53 by vmabuza           #+#    #+#             */
-/*   Updated: 2019/05/28 12:43:24 by vmabuza          ###   ########.fr       */
+/*   Created: 2019/05/28 16:27:26 by vmabuza           #+#    #+#             */
+/*   Updated: 2019/05/30 17:38:28 by vmabuza          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
 
-void	ft_memset(void *b, int c, size_t len)
+int		ft_atoi(const char *str)
 {
-	unsigned char *p;
+	int i;
+	int result;
 
-	*p = b;
-	while (len != 0)
+	i = 0;
+	result = 0;
+	while (str[i])
 	{
-		*p = c;
-		p++;
-		len--;
+		result = result * 10 + str[i] - '0';
+		i++;
 	}
-	return (b);
+	return (result);
+}
+
+int main () 
+{
+	char str[100] = "89789";
+    int val = ft_atoi(str);
+	printf("%d", val);
+	return (0);
 }

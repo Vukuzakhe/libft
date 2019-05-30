@@ -1,27 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_strndup.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vmabuza <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/21 11:15:53 by vmabuza           #+#    #+#             */
-/*   Updated: 2019/05/28 12:43:24 by vmabuza          ###   ########.fr       */
+/*   Created: 2019/05/23 10:27:52 by vmabuza           #+#    #+#             */
+/*   Updated: 2019/05/23 13:56:06 by vmabuza          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stdlib.h>
 
-void	ft_memset(void *b, int c, size_t len)
+char *ft_strncpy(char *dest, char *src, size_t n)
 {
-	unsigned char *p;
+	int i;
+	char *p;
 
-	*p = b;
-	while (len != 0)
-	{
-		*p = c;
-		p++;
-		len--;
-	}
-	return (b);
+	i = 0;
+	p = dest;
+	if (dest == NULL)
+	   	return (NULL);
+	else
+		while (src[i] && n--)
+		{
+			dest[i] = src[i];
+			i++;
+		}
+	return (p);
 }

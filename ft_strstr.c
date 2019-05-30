@@ -1,27 +1,43 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_strstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vmabuza <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/21 11:15:53 by vmabuza           #+#    #+#             */
-/*   Updated: 2019/05/28 12:43:24 by vmabuza          ###   ########.fr       */
+/*   Created: 2019/05/27 12:31:30 by vmabuza           #+#    #+#             */
+/*   Updated: 2019/05/27 16:15:31 by vmabuza          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-void	ft_memset(void *b, int c, size_t len)
+#include <stdlib.h>
+#include <stdio.h>
+char	*ft_strstr(char *str, char *str1)
 {
-	unsigned char *p;
-
-	*p = b;
-	while (len != 0)
+	while(*str)
 	{
-		*p = c;
-		p++;
-		len--;
+		char *strt;
+		char *ocrn;
+
+		strt = str;
+		ocrn = str1;
+		while(*str && *ocrn && *str == *ocrn)
+		{
+			str++;
+			ocrn++;
+		}
+		if (!*ocrn)
+			return (strt);
+		str = strt + 1;
 	}
-	return (b);
+	return (NULL);
 }
+
+/*int main()
+{
+	char s1[] = "This was awesome";
+
+    printf ("Returned String: %s\n", ft_strstr(s1, "b"));
+
+	return 0;
+}*/

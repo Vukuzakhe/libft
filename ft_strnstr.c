@@ -1,27 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vmabuza <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/21 11:15:53 by vmabuza           #+#    #+#             */
-/*   Updated: 2019/05/28 12:43:24 by vmabuza          ###   ########.fr       */
+/*   Created: 2019/05/27 16:21:37 by vmabuza           #+#    #+#             */
+/*   Updated: 2019/05/28 11:43:23 by vmabuza          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stdio.h>
+#include <stdlib.h>
 
-void	ft_memset(void *b, int c, size_t len)
+char *ft_strnstr(char *s1, char *s2, size_t len)
 {
-	unsigned char *p;
+	size_t len1;
+	size_t len2;
 
-	*p = b;
-	while (len != 0)
-	{
-		*p = c;
-		p++;
-		len--;
-	}
-	return (b);
+	len2 = ft_strlen(s2);
+	if (!len2)
+		return (s1);
+	else
+		while (len >= len2)
+		{
+			len--;
+			if (!ft_memcmp(s1, s2, len2))
+				return (s1);
+			s1++;
+		}
+	return (NULL);
+}
+
+int main(void)
+{
+	char str[] = "someone did something";
+
+	printf("%s", (ft_strnstr(str, "did", 20)));
+	return (0);
 }

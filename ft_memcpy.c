@@ -1,27 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vmabuza <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/21 11:15:53 by vmabuza           #+#    #+#             */
-/*   Updated: 2019/05/28 12:43:24 by vmabuza          ###   ########.fr       */
+/*   Created: 2019/05/21 11:26:26 by vmabuza           #+#    #+#             */
+/*   Updated: 2019/05/28 12:31:18 by vmabuza          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-void	ft_memset(void *b, int c, size_t len)
+//#include "libft.h"
+#include <stdio.h>
+#include <string.h>
+void	ft_memcpy(void *dest,void *src, unsigned int n)
 {
-	unsigned char *p;
+	int i;
+	char *csrc;
+	char *cdest;
 
-	*p = b;
-	while (len != 0)
+	i = 0;
+	csrc = src;
+	cdest = dest;
+	while (i < n)
 	{
-		*p = c;
-		p++;
-		len--;
+		cdest[i] = csrc[i];
+		i++;
 	}
-	return (b);
+}
+
+int main()
+{
+	char a[] = "something";
+	char b[50];
+	ft_memcpy(b, a, 50);
+	printf("%s\n", b);
+	printf("%s", memcpy(b, a, 50));
+	return (0);
 }

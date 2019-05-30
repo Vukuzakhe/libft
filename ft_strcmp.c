@@ -1,27 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_strcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vmabuza <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/21 11:15:53 by vmabuza           #+#    #+#             */
-/*   Updated: 2019/05/28 12:43:24 by vmabuza          ###   ########.fr       */
+/*   Created: 2019/05/28 11:44:19 by vmabuza           #+#    #+#             */
+/*   Updated: 2019/05/28 14:38:00 by vmabuza          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-void	ft_memset(void *b, int c, size_t len)
+int		ft_strcmp(const char *s1, const char *s2)
 {
-	unsigned char *p;
-
-	*p = b;
-	while (len != 0)
+	while (*s1)
 	{
-		*p = c;
-		p++;
-		len--;
+		if (*s1 != *s2)
+			break;
+		s1++;
+		s2++;
 	}
-	return (b);
+	return (*s1 - *s2)
 }

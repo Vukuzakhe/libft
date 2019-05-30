@@ -1,27 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vmabuza <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/21 11:15:53 by vmabuza           #+#    #+#             */
-/*   Updated: 2019/05/28 12:43:24 by vmabuza          ###   ########.fr       */
+/*   Created: 2019/05/27 09:38:13 by vmabuza           #+#    #+#             */
+/*   Updated: 2019/05/28 15:27:01 by vmabuza          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
-void	ft_memset(void *b, int c, size_t len)
+char *ft_strchr(char *s, int c)
 {
-	unsigned char *p;
+     while (*s != c && *s != '\0')
+		 s++;
+	 if (*s == c)
+		 return (s);
+         else
+             return (NULL);
+}
 
-	*p = b;
-	while (len != 0)
-	{
-		*p = c;
-		p++;
-		len--;
-	}
-	return (b);
+int main(void)
+{
+	char a[] = "something";
+	printf("%s\n", (ft_strchr(a, 'o')));
+	printf("%s\n", (strchr(a, 'o')));
+	printf("%s\n", (strchr(a, 'w')));
+	printf("%s", (ft_strchr(a, 'v')));
+	return (0);
 }

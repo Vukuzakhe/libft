@@ -1,27 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vmabuza <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/21 11:15:53 by vmabuza           #+#    #+#             */
-/*   Updated: 2019/05/28 12:43:24 by vmabuza          ###   ########.fr       */
+/*   Created: 2019/05/27 11:16:40 by vmabuza           #+#    #+#             */
+/*   Updated: 2019/05/27 12:25:34 by vmabuza          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stdio.h>
+#include <stdlib.h>
 
-void	ft_memset(void *b, int c, size_t len)
+char    *ft_strchr(char *s, int c);
+char	*ft_strrchr(char *s, int c)
 {
-	unsigned char *p;
+	char *last;
 
-	*p = b;
-	while (len != 0)
+	last = NULL;
+	if (c == '\0')
+		return (ft_strchr(s, c));
+	while ((s = ft_strchr(s, c)) != NULL)
 	{
-		*p = c;
-		p++;
-		len--;
+		last = s;
+		s++;
 	}
-	return (b);
+	return (last);
 }
+/*
+int main(void)
+{
+	char a[] = "something, kinda feels awesome";
+
+	printf("%s", ft_strrchr(a, ','));
+	return (0);
+}*/
