@@ -6,13 +6,11 @@
 /*   By: vmabuza <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/28 16:27:26 by vmabuza           #+#    #+#             */
-/*   Updated: 2019/05/30 17:38:28 by vmabuza          ###   ########.fr       */
+/*   Updated: 2019/05/31 15:47:36 by vmabuza          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include <string.h>
-#include <stdio.h>
+#include "libft.h"
 
 int		ft_atoi(const char *str)
 {
@@ -29,10 +27,10 @@ int		ft_atoi(const char *str)
 	return (result);
 }
 
-int main () 
+/*int main () 
 {
-	char str[100] = "89789";
+	char str[100] = "55585";
     int val = ft_atoi(str);
 	printf("%d", val);
 	return (0);
-}
+}*/

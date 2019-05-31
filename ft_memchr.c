@@ -6,11 +6,12 @@
 /*   By: vmabuza <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 14:28:55 by vmabuza           #+#    #+#             */
-/*   Updated: 2019/05/21 16:47:30 by vmabuza          ###   ########.fr       */
+/*   Updated: 2019/05/31 15:26:57 by vmabuza          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stdio.h>
-#include <stddef.h>
+
+#include "libft.h"
+
 void	ft_memchr(const void *s, int c, size_t n)
 {
 	unsigned char *p;
@@ -24,7 +25,7 @@ void	ft_memchr(const void *s, int c, size_t n)
 	//return (0);
 }
 
-int main(void)
+/*int main(void)
 {
 	char *s1 = "";
 	char *s2 = "abcdefabcdef";
@@ -62,4 +63,4 @@ int main(void)
 
 	ft_memchr();
 	return (0);
-}
+}*/

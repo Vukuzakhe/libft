@@ -6,9 +6,11 @@
 /*   By: vmabuza <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/28 11:44:19 by vmabuza           #+#    #+#             */
-/*   Updated: 2019/05/28 14:38:00 by vmabuza          ###   ########.fr       */
+/*   Updated: 2019/05/31 15:49:49 by vmabuza          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int		ft_strcmp(const char *s1, const char *s2)
 {
@@ -19,5 +21,5 @@ int		ft_strcmp(const char *s1, const char *s2)
 		s1++;
 		s2++;
 	}
-	return (*s1 - *s2)
+	return (*s1 - *s2);
 }

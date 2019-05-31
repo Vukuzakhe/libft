@@ -6,13 +6,15 @@
 /*   By: vmabuza <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 12:17:59 by vmabuza           #+#    #+#             */
-/*   Updated: 2019/05/21 12:44:47 by vmabuza          ###   ########.fr       */
+/*   Updated: 2019/05/31 15:50:48 by vmabuza          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_memset(void *dest, void *src, int c, size_t n)
+#include "libft.h"
+
+void	ft_memccpy(void *dest, void *src, int c, size_t n)
 {
-	int i;
+	size_t i;
 	char *csrc;
 	char *cdest;
 	char *ptr;

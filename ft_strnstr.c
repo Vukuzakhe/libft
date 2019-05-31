@@ -6,12 +6,11 @@
 /*   By: vmabuza <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 16:21:37 by vmabuza           #+#    #+#             */
-/*   Updated: 2019/05/28 11:43:23 by vmabuza          ###   ########.fr       */
+/*   Updated: 2019/05/31 15:43:57 by vmabuza          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
+#include "libft.h"
 
 char *ft_strnstr(char *s1, char *s2, size_t len)
 {
@@ -32,10 +31,10 @@ char *ft_strnstr(char *s1, char *s2, size_t len)
 	return (NULL);
 }
 
-int main(void)
+/*int main(void)
 {
 	char str[] = "someone did something";
 
 	printf("%s", (ft_strnstr(str, "did", 20)));
 	return (0);
-}
+}*/

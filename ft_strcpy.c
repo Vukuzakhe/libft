@@ -6,11 +6,12 @@
 /*   By: vmabuza <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/22 16:48:24 by vmabuza           #+#    #+#             */
-/*   Updated: 2019/05/24 13:00:46 by vmabuza          ###   ########.fr       */
+/*   Updated: 2019/05/31 15:19:25 by vmabuza          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
+
 char *ft_strcpy(char *dest, char *src)
 {
 	int i;

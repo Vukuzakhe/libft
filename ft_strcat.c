@@ -6,9 +6,11 @@
 /*   By: vmabuza <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/23 11:34:16 by vmabuza           #+#    #+#             */
-/*   Updated: 2019/05/24 12:13:33 by vmabuza          ###   ########.fr       */
+/*   Updated: 2019/05/31 15:20:24 by vmabuza          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 char	*ft_strcat(char *dest, char *src)
 {

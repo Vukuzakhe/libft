@@ -6,12 +6,12 @@
 /*   By: vmabuza <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 12:31:30 by vmabuza           #+#    #+#             */
-/*   Updated: 2019/05/27 16:15:31 by vmabuza          ###   ########.fr       */
+/*   Updated: 2019/05/31 15:40:06 by vmabuza          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include <stdio.h>
+#include "libft.h"
+
 char	*ft_strstr(char *str, char *str1)
 {
 	while(*str)

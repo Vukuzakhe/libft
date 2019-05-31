@@ -6,15 +6,16 @@
 /*   By: vmabuza <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/28 14:52:08 by vmabuza           #+#    #+#             */
-/*   Updated: 2019/05/28 15:39:59 by vmabuza          ###   ########.fr       */
+/*   Updated: 2019/05/31 15:36:46 by vmabuza          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
-char *ft_strcpy(char *dest, char *src);
-int ft_strncmp(const char *s, const char *t, size_t n) {
-    while(n--) {
+#include "libft.h"
+
+int ft_strncmp(const char *s, const char *t, size_t n) 
+{
+    while(n--)
+	{
         if(*s != *t) {
             return *s - *t;
         }
@@ -22,7 +23,7 @@ int ft_strncmp(const char *s, const char *t, size_t n) {
             ++s;
             ++t;
         }
-    }
+	}
 
     return 0;
 }

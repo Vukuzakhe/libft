@@ -6,14 +6,15 @@
 /*   By: vmabuza <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/22 12:23:45 by vmabuza           #+#    #+#             */
-/*   Updated: 2019/05/22 16:02:25 by vmabuza          ###   ########.fr       */
+/*   Updated: 2019/05/31 15:34:13 by vmabuza          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-//#include "libft.h"
 
-unsigned int	ft_strlen(const char *str)
+#include "libft.h"
+
+size_t		ft_strlen(const char *str)
 {
-	unsigned int i;
+	size_t i;
 
 	i = 0;
 	while (str[i])

@@ -6,14 +6,12 @@
 /*   By: vmabuza <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 11:16:40 by vmabuza           #+#    #+#             */
-/*   Updated: 2019/05/27 12:25:34 by vmabuza          ###   ########.fr       */
+/*   Updated: 2019/05/31 15:39:19 by vmabuza          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
+#include "libft.h"
 
-char    *ft_strchr(char *s, int c);
 char	*ft_strrchr(char *s, int c)
 {
 	char *last;
