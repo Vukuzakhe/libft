@@ -6,7 +6,7 @@
 /*   By: vmabuza <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/28 11:44:19 by vmabuza           #+#    #+#             */
-/*   Updated: 2019/05/31 15:49:49 by vmabuza          ###   ########.fr       */
+/*   Updated: 2019/06/04 12:20:33 by vmabuza          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int		ft_strcmp(const char *s1, const char *s2)
 	while (*s1)
 	{
 		if (*s1 != *s2)
-			break;
+			break ;
 		s1++;
 		s2++;
 	}

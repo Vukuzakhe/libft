@@ -6,7 +6,7 @@
 /*   By: vmabuza <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 12:31:30 by vmabuza           #+#    #+#             */
-/*   Updated: 2019/05/31 15:40:06 by vmabuza          ###   ########.fr       */
+/*   Updated: 2019/06/04 13:09:33 by vmabuza          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,14 @@
 
 char	*ft_strstr(char *str, char *str1)
 {
-	while(*str)
-	{
-		char *strt;
-		char *ocrn;
+	char	*strt;
+	char	*ocrn;
 
+	while (*str)
+	{
 		strt = str;
 		ocrn = str1;
-		while(*str && *ocrn && *str == *ocrn)
+		while (*str && *ocrn && *str == *ocrn)
 		{
 			str++;
 			ocrn++;
@@ -32,12 +32,3 @@ char	*ft_strstr(char *str, char *str1)
 	}
 	return (NULL);
 }
-
-/*int main()
-{
-	char s1[] = "This was awesome";
-
-    printf ("Returned String: %s\n", ft_strstr(s1, "b"));
-
-	return 0;
-}*/

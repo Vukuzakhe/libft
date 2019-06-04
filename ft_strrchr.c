@@ -6,7 +6,7 @@
 /*   By: vmabuza <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 11:16:40 by vmabuza           #+#    #+#             */
-/*   Updated: 2019/05/31 15:39:19 by vmabuza          ###   ########.fr       */
+/*   Updated: 2019/06/04 13:03:16 by vmabuza          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strrchr(char *s, int c)
 {
-	char *last;
+	char	*last;
 
 	last = NULL;
 	if (c == '\0')
@@ -26,11 +26,3 @@ char	*ft_strrchr(char *s, int c)
 	}
 	return (last);
 }
-/*
-int main(void)
-{
-	char a[] = "something, kinda feels awesome";
-
-	printf("%s", ft_strrchr(a, ','));
-	return (0);
-}*/

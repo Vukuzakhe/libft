@@ -6,16 +6,16 @@
 /*   By: vmabuza <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/22 16:48:24 by vmabuza           #+#    #+#             */
-/*   Updated: 2019/05/31 15:19:25 by vmabuza          ###   ########.fr       */
+/*   Updated: 2019/06/04 12:27:24 by vmabuza          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strcpy(char *dest, char *src)
+char	*ft_strcpy(char *dest, char *src)
 {
-	int i;
-	char *p;
+	int		i;
+	char	*p;
 
 	i = 0;
 	p = dest;

@@ -6,7 +6,7 @@
 /*   By: vmabuza <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/28 16:27:26 by vmabuza           #+#    #+#             */
-/*   Updated: 2019/05/31 15:47:36 by vmabuza          ###   ########.fr       */
+/*   Updated: 2019/06/04 12:07:25 by vmabuza          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,11 +26,3 @@ int		ft_atoi(const char *str)
 	}
 	return (result);
 }
-
-/*int main () 
-{
-	char str[100] = "55585";
-    int val = ft_atoi(str);
-	printf("%d", val);
-	return (0);
-}*/

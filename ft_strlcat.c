@@ -6,18 +6,18 @@
 /*   By: vmabuza <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/24 10:10:37 by vmabuza           #+#    #+#             */
-/*   Updated: 2019/05/31 15:33:41 by vmabuza          ###   ########.fr       */
+/*   Updated: 2019/06/04 12:34:27 by vmabuza          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t ft_strlcat(char *dest, const char *src, size_t size)
+size_t		ft_strlcat(char *dest, const char *src, size_t size)
 {
-	char *d;
-	const char *s;
-	size_t dlen;
-	size_t n;
+	char		*d;
+	const char	*s;
+	size_t		dlen;
+	size_t		n;
 
 	d = dest;
 	s = src;
@@ -32,18 +32,9 @@ size_t ft_strlcat(char *dest, const char *src, size_t size)
 	{
 		if (n != 1)
 			*dest = *src;
-			n--;
+		n--;
 		s++;
 	}
 	*d = '\0';
 	return (dlen + (s - src));
 }
-
-/*int main(void)
-{
-	char a[] = "aa";
-	char b[] = "abcd";
-
-	printf("%zu", (ft_strlcat(a, b, 1)));
-	return (0);
-}*/

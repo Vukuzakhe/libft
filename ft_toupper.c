@@ -6,7 +6,7 @@
 /*   By: vmabuza <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/30 14:52:56 by vmabuza           #+#    #+#             */
-/*   Updated: 2019/05/30 15:34:44 by vmabuza          ###   ########.fr       */
+/*   Updated: 2019/06/04 13:11:08 by vmabuza          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,12 +19,3 @@ int		ft_toupper(int c)
 	else
 		return (c);
 }
-
-/*int main(void)
-{
-	char c = 'g';
-
-	int d = ft_toupper(c);
-	printf("%c", d);
-	return (0);
-}*/

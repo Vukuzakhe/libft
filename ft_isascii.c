@@ -6,25 +6,16 @@
 /*   By: vmabuza <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/30 13:09:22 by vmabuza           #+#    #+#             */
-/*   Updated: 2019/05/31 15:22:53 by vmabuza          ###   ########.fr       */
+/*   Updated: 2019/06/04 12:12:10 by vmabuza          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isascii(int c)
+int		ft_isascii(int c)
 {
 	if (c >= 0 && c <= 177)
 		return (1);
-	else 
+	else
 		return (0);
 }
-
-/*int main(void)
-{
-	int c = '0x80';
-	int d = ft_isascii(c);
-
-	printf("%d", d);
-	return (0);
-}*/

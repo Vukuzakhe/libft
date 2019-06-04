@@ -6,7 +6,7 @@
 /*   By: vmabuza <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/30 12:32:50 by vmabuza           #+#    #+#             */
-/*   Updated: 2019/05/31 15:23:34 by vmabuza          ###   ########.fr       */
+/*   Updated: 2019/06/04 12:13:33 by vmabuza          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,12 +19,3 @@ int		ft_isdigit(int c)
 	else
 		return (0);
 }
-
-/*int main(void)
-{
-	int c = 'w';
-	int d = ft_isdigit(c);
-
-	printf("%d", d);
-	return (0);
-}*/
