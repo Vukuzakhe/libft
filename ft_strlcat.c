@@ -6,7 +6,7 @@
 /*   By: vmabuza <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/24 10:10:37 by vmabuza           #+#    #+#             */
-/*   Updated: 2019/06/04 12:34:27 by vmabuza          ###   ########.fr       */
+/*   Updated: 2019/06/05 10:56:42 by vmabuza          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,8 +31,10 @@ size_t		ft_strlcat(char *dest, const char *src, size_t size)
 	while (*s)
 	{
 		if (n != 1)
-			*dest = *src;
-		n--;
+		{
+			*d++ = *s;
+			n--;
+		}
 		s++;
 	}
 	*d = '\0';
