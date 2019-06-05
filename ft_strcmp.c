@@ -6,7 +6,7 @@
 /*   By: vmabuza <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/28 11:44:19 by vmabuza           #+#    #+#             */
-/*   Updated: 2019/06/04 12:20:33 by vmabuza          ###   ########.fr       */
+/*   Updated: 2019/06/04 17:23:54 by vmabuza          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,5 +21,5 @@ int		ft_strcmp(const char *s1, const char *s2)
 		s1++;
 		s2++;
 	}
-	return (*s1 - *s2);
+	return ((const unsigned char)*s1 - (const unsigned char)*s2);
 }
