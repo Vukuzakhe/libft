@@ -10,3 +10,5 @@ int main(void)
 	return (0);
 }
 //https://elixir.bootlin.com/linux/v4.12-rc2/source/lib/string.c
+//:%s/\s\+$//
+//autocmd BufWritePre * :%s/\s+$//e
