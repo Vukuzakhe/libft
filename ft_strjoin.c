@@ -1,32 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcpy.c                                        :+:      :+:    :+:   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vmabuza <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/22 16:48:24 by vmabuza           #+#    #+#             */
-/*   Updated: 2019/06/08 16:44:30 by vmabuza          ###   ########.fr       */
+/*   Created: 2019/06/08 15:41:39 by vmabuza           #+#    #+#             */
+/*   Updated: 2019/06/08 16:53:05 by vmabuza          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strcpy(char *dest, const char *src)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
-	int		i;
-	char	*p;
+	size_t	len;
+	char	*tab;
 
-	i = 0;
-	p = dest;
-	if (dest == NULL)
+	len = (ft_strlen(s1) + ft_strlen(s2));
+	tab = (char *)ft_memalloc(len + 1);
+	if (!tab)
 		return (NULL);
 	else
-		while (src[i])
-		{
-			dest[i] = src[i];
-			i++;
-		}
-	dest[i] = '\0';
-	return (p);
+		tab = ft_strcpy(tab, s1);
+	tab = ft_strcat(tab, s2);
+	return (tab);
 }

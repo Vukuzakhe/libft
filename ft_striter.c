@@ -1,32 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcpy.c                                        :+:      :+:    :+:   */
+/*   ft_striter.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vmabuza <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/22 16:48:24 by vmabuza           #+#    #+#             */
-/*   Updated: 2019/06/08 16:44:30 by vmabuza          ###   ########.fr       */
+/*   Created: 2019/06/08 10:14:11 by vmabuza           #+#    #+#             */
+/*   Updated: 2019/06/08 10:55:23 by vmabuza          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strcpy(char *dest, const char *src)
+void	ft_striter(char *s, void (*f)(char *))
 {
-	int		i;
-	char	*p;
+	unsigned int i;
 
 	i = 0;
-	p = dest;
-	if (dest == NULL)
-		return (NULL);
-	else
-		while (src[i])
+	if (s != NULL && *f != NULL)
+	{
+		while (s[i])
 		{
-			dest[i] = src[i];
+			f(s + i);
 			i++;
 		}
-	dest[i] = '\0';
-	return (p);
+	}
 }

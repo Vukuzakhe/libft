@@ -6,13 +6,13 @@
 /*   By: vmabuza <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/23 11:34:16 by vmabuza           #+#    #+#             */
-/*   Updated: 2019/05/31 15:20:24 by vmabuza          ###   ########.fr       */
+/*   Updated: 2019/06/08 16:46:51 by vmabuza          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strcat(char *dest, char *src)
+char	*ft_strcat(char *dest, const char *src)
 {
 	ft_strcpy(dest + ft_strlen(dest), src);
 	return (dest);

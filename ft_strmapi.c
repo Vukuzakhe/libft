@@ -1,32 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcpy.c                                        :+:      :+:    :+:   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vmabuza <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/22 16:48:24 by vmabuza           #+#    #+#             */
-/*   Updated: 2019/06/08 16:44:30 by vmabuza          ###   ########.fr       */
+/*   Created: 2019/06/08 12:52:08 by vmabuza           #+#    #+#             */
+/*   Updated: 2019/06/08 13:03:50 by vmabuza          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strcpy(char *dest, const char *src)
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	int		i;
-	char	*p;
+	unsigned int	i;
+	char			*str;
 
 	i = 0;
-	p = dest;
-	if (dest == NULL)
+	str = (char *)ft_memalloc((ft_strlen(s)) + 1);
+	if (str == NULL)
 		return (NULL);
 	else
-		while (src[i])
+		while (s[i])
 		{
-			dest[i] = src[i];
+			str[i] = f(i, s[i]);
 			i++;
 		}
-	dest[i] = '\0';
-	return (p);
+	str[i] = '\0';
+	return (str);
 }
