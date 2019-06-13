@@ -6,7 +6,7 @@
 /*   By: vmabuza <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/28 13:52:45 by vmabuza           #+#    #+#             */
-/*   Updated: 2019/06/10 16:10:19 by vmabuza          ###   ########.fr       */
+/*   Updated: 2019/06/13 15:40:15 by vmabuza          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,9 +47,9 @@ char				*ft_strdup(char *str);
 size_t				ft_strlcat(char *dest, const char *src, size_t size);
 size_t				ft_strlen(const char *str);
 char				*ft_strncat(char *dest, char *src, size_t n);
-char				*ft_strncpy(char *dest, char *src, size_t n);
+char				*ft_strncpy(char *dest, const char *src, size_t n);
 int					ft_strncmp(const char *s, const char *t, size_t n);
-char				*ft_strnstr(const char *s1, const char *s2, size_t len);
+char				*ft_strnstr(const char *haystack, const char *needle, size_t len);
 char				*ft_strrchr(char *s, int c);
 char				*ft_strstr(const char *s1, const char *s2);
 int					ft_tolower(int c);
@@ -75,5 +75,6 @@ int					ft_strequ(char const *s1, char const *s2);
 int					ft_strnequ(char const *s1, char const *s2, size_t n);
 char				*ft_strsub(char const *s, unsigned int start, size_t len);
 char				*ft_strjoin(char const *s1, char const *s2);
+char				*ft_strtrim(char const *s);
 
 #endif

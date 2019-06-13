@@ -6,7 +6,7 @@
 /*   By: vmabuza <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/08 13:33:44 by vmabuza           #+#    #+#             */
-/*   Updated: 2019/06/08 13:54:25 by vmabuza          ###   ########.fr       */
+/*   Updated: 2019/06/13 13:45:40 by vmabuza          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ char	*ft_strsub(char const *s, unsigned int start, size_t len)
 	char			*str;
 
 	i = 0;
+	if (!s)
+		return (NULL);
 	str = (char *)(ft_memalloc(len + 1));
 	if (str == NULL)
 		return (NULL);

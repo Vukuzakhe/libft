@@ -6,7 +6,7 @@
 /*   By: vmabuza <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/08 15:41:39 by vmabuza           #+#    #+#             */
-/*   Updated: 2019/06/08 16:53:05 by vmabuza          ###   ########.fr       */
+/*   Updated: 2019/06/13 14:05:56 by vmabuza          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	size_t	len;
 	char	*tab;
 
+	if (!s1)
+		return (NULL);
 	len = (ft_strlen(s1) + ft_strlen(s2));
 	tab = (char *)ft_memalloc(len + 1);
 	if (!tab)
