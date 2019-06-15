@@ -6,7 +6,7 @@
 /*   By: vmabuza <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 12:31:30 by vmabuza           #+#    #+#             */
-/*   Updated: 2019/06/13 11:58:11 by vmabuza          ###   ########.fr       */
+/*   Updated: 2019/06/15 03:59:54 by vmabuza          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ char	*ft_strstr(const char *str, const char *str1)
 {
 	char	*strt;
 	char	*ocrn;
-	
+
 	if (ft_strlen((char *)str) == 0 && ft_strlen((char *)str1) == 0)
 		return ((char *)str);
 	while (*str)

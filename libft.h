@@ -6,7 +6,7 @@
 /*   By: vmabuza <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/28 13:52:45 by vmabuza           #+#    #+#             */
-/*   Updated: 2019/06/13 15:40:15 by vmabuza          ###   ########.fr       */
+/*   Updated: 2019/06/15 09:47:21 by vmabuza          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,7 @@
 # define LIBFT_H
 # include <unistd.h>
 # include <stdlib.h>
-# include <stddef.h>
 # include <string.h>
-# include <stdio.h>
 # define BUFF_SIZE 4096
 
 typedef	struct		s_list
@@ -49,7 +47,7 @@ size_t				ft_strlen(const char *str);
 char				*ft_strncat(char *dest, char *src, size_t n);
 char				*ft_strncpy(char *dest, const char *src, size_t n);
 int					ft_strncmp(const char *s, const char *t, size_t n);
-char				*ft_strnstr(const char *haystack, const char *needle, size_t len);
+char				*ft_strnstr(const char *s1, const char *s2, size_t len);
 char				*ft_strrchr(char *s, int c);
 char				*ft_strstr(const char *s1, const char *s2);
 int					ft_tolower(int c);
@@ -76,5 +74,9 @@ int					ft_strnequ(char const *s1, char const *s2, size_t n);
 char				*ft_strsub(char const *s, unsigned int start, size_t len);
 char				*ft_strjoin(char const *s1, char const *s2);
 char				*ft_strtrim(char const *s);
+char				**ft_strsplit(char const *s, char c);
+int					ft_cntwrd(char const *s, char c);
+char				*ft_strndup(const char *s, size_t n);
+char				*ft_itoa(int n);
 
 #endif
