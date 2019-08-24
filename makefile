@@ -22,7 +22,8 @@ SRC = ft_isalpha.c ft_strcat.c ft_strlcat.c ft_memccpy.c ft_memmove.c\
 	  ft_putnbr_fd.c ft_memalloc.c ft_memdel.c ft_strnew.c ft_strdel.c\
 	  ft_strclr.c ft_striter.c ft_striteri.c ft_strmap.c ft_strmapi.c\
 	  ft_strequ.c ft_strnequ.c ft_strsub.c ft_strjoin.c ft_strtrim.c\
-	  ft_strsplit.c ft_cntwrd.c ft_strndup.c ft_itoa.c
+	  ft_strsplit.c ft_cntwrd.c ft_strndup.c ft_itoa.c get_next_line.c\
+	  ft_realloc.c ft_int_len.c
 
 OBJ = $(subst .c,.o,$(SRC))
 

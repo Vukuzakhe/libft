@@ -15,7 +15,7 @@
 # include <unistd.h>
 # include <stdlib.h>
 # include <string.h>
-# define BUFF_SIZE 4096
+# include "get_next_line.h"
 
 typedef	struct		s_list
 {
@@ -78,5 +78,8 @@ char				**ft_strsplit(char const *s, char c);
 int					ft_cntwrd(char const *s, char c);
 char				*ft_strndup(const char *s, size_t n);
 char				*ft_itoa(int n);
+char				*ft_realloc(char *ptr, size_t n);
+size_t				ft_int_len(long long int n);
+int					get_next_line(const int fd, char **line);
 
 #endif
